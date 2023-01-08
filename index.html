@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Password</title>
+    <style>
+            *{
+            margin: 0%;
+            padding: 0%;
+            font-size: 1.2rem;
+            /* color: white; */
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            height: 98vh;
+            width: 90vw;
+            justify-content: center;
+            align-items: center;
+            border: 5px solid black;
+            margin: auto;
+            border-radius: 15px;
+        }
+        .buttons{
+            display: flex;
+            flex-direction: column;
+            /* height: 98vh; */
+            /* width: 90vw; */
+            justify-content: center;
+            align-items: center;
+        }
+        .btn{
+            border: 2px solid gray;
+            border-radius: 12px;
+            padding: 5px;
+            margin: 5px 10px;
+        }
+        /* .container::before{
+            content: " ";
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            height: 100%;
+            width: 100%;
+            z-index: -9;
+            /* background: url(https://i.pinimg.com/736x/6d/f9/f9/6df9f905a2f32d50a729adf1bc23d432.jpg) center center / cover no-repeat; */
+        #see{
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 9px;
+            width: fit-content;
+
+        }
+        p{
+            margin: 50px 50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="headings"><h4>Generate password as you want</h4></p>
+        <p class="midsec"><here id="see">here it is </span></p>
+        <p class="buttons"><button class="btn" onclick="a.weak()">weak password</button>
+                           <button class="btn" onclick="a.strong()">strong password</button>
+                           <button class="btn" onclick="a.super()">super strong password</button>
+                           <button class="btn" onclick="a.funny()">funny Password</button>
+        </p>
+    </div>
+</body>
+<script>
+    let see = document.getElementById('see');
+    let alpha0 = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+    // let randomalpha0 = alpha0[Math.floor(alpha0.length * Math.random())];
+    let alpha = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+    // let randomalpha = alpha[Math.floor(alpha0.length * Math.random())];
+    let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+    // let randomnum = num[Math.floor(alpha0.length * Math.random())];
+    let char  =['@', '.', ':', ';', '?', '/','-','_','^','#'];
+    // let randomchar = char[Math.floor(alpha0.length * Math.random())];
+
+    let funny0 = ['Password','Admin', '1234567890','abcdefgh','Instagram','Ghantagram','Binod']
+    class Password{
+        weak(){
+            let ba0 = alpha0[Math.floor(alpha0.length * Math.random())];
+            let ba01 = alpha0[Math.floor(alpha0.length * Math.random())];
+            let ba02 = alpha0[Math.floor(alpha0.length * Math.random())];
+            let sa = alpha[Math.floor(alpha.length * Math.random())]; 
+            let sa1 = alpha[Math.floor(alpha.length * Math.random())]; 
+            let sa2 = alpha[Math.floor(alpha.length * Math.random())]; 
+            let rn = num[Math.floor(num.length * Math.random())];
+            let rn1 = num[Math.floor(num.length * Math.random())];
+            let rn2 = num[Math.floor(num.length * Math.random())];
+            let rc = char[Math.floor(char.length * Math.random())];
+            let rc1 = char[Math.floor(char.length * Math.random())];
+
+            see.innerHTML = `${ba0}${ba01}${ba02}${sa}${sa1}${sa2}${rn}${rn1}${rn2}${rc}${rc1}`;
+        }
+        strong(){
+            let ba0 = alpha0[Math.floor(alpha0.length * Math.random())];
+            let ba01 = alpha0[Math.floor(alpha0.length * Math.random())];
+            let ba02 = alpha0[Math.floor(alpha0.length * Math.random())];
+            let sa = alpha[Math.floor(alpha.length * Math.random())]; 
+            let sa1 = alpha[Math.floor(alpha.length * Math.random())]; 
+            let sa2 = alpha[Math.floor(alpha.length * Math.random())]; 
+            let rn = num[Math.floor(num.length * Math.random())];
+            let rn1 = num[Math.floor(num.length * Math.random())];
+            let rn2 = num[Math.floor(num.length * Math.random())];
+            let rc = char[Math.floor(char.length * Math.random())];
+            let rc1 = char[Math.floor(char.length * Math.random())];
+
+            see.innerHTML = `${ba0}${ba01}${sa}${sa1}${rn}${rc1}${ba02}${rn2}${rn1}${rc}${sa2}`
+        }
+        super(){
+            let ba0 = alpha0[Math.floor(alpha0.length * Math.random())];
+            let ba01 = alpha0[Math.floor(alpha0.length * Math.random())];
+            let ba02 = alpha0[Math.floor(alpha0.length * Math.random())];
+            let sa = alpha[Math.floor(alpha.length * Math.random())]; 
+            let sa1 = alpha[Math.floor(alpha.length * Math.random())]; 
+            let sa2 = alpha[Math.floor(alpha.length * Math.random())]; 
+            let rn = num[Math.floor(num.length * Math.random())];
+            let rn1 = num[Math.floor(num.length * Math.random())];
+            let rn2 = num[Math.floor(num.length * Math.random())];
+            let rc = char[Math.floor(char.length * Math.random())];
+            let rc1 = char[Math.floor(char.length * Math.random())];
+            let rc2 = char[Math.floor(char.length * Math.random())];
+            let rc3 = char[Math.floor(char.length * Math.random())];
+
+            see.innerHTML = `${rc}${rn}${sa}${rc2}${ba0}${ba01}${rn1}${rc3}${sa2}${ba02}${rn2}${sa1}${rc1}`
+        }
+        funny(){
+            let funny1 = funny0[Math.floor(funny0.length * Math.random())];
+            see.innerHTML = funny1;
+        }
+    };
+
+    let a = new Password;
+
+</script>
+</html>
